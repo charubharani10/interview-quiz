@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the correct CSS syntax for making all paragraph elements red?",
+      "options": [
+        "p {color: red}",
+        "p.all {color: red}",
+        "#p {color: red}",
+        "all.p {color: red}"
+      ],
+      "correctAnswer": "p {color: red}",
+      "explanation": "In CSS, to style all elements of a particular type, you simply use the element name as the selector. The p selector targets all <p> elements on the page."
+    },
+    {
+      "question": "Which property is used to change the background color of an element?",
+      "options": [
+        "color",
+        "bgcolor",
+        "background-color",
+        "bg-color"
+      ],
+      "correctAnswer": "background-color",
+      "explanation": "The background-color property sets the background color of an element. It can accept color names, RGB values, HEX values, and other color formats."
+    },
+    {
+      "question": "How do you select an element with the class name 'header'?",
+      "options": [
+        "#header",
+        ".header",
+        "header",
+        "*header"
+      ],
+      "correctAnswer": ".header",
+      "explanation": "In CSS, class selectors start with a dot (.). The .header selector will target all elements with class='header'."
+    },
+    {
+      "question": "What is the correct way to apply a style to an element with id 'main'?",
+      "options": [
+        ".main",
+        "main",
+        "#main",
+        "*main"
+      ],
+      "correctAnswer": "#main",
+      "explanation": "In CSS, ID selectors start with a hash (#). The #main selector will target the element with id='main'. IDs must be unique within a page."
+    },
+    {
+      "question": "Which CSS property controls the text size?",
+      "options": [
+        "text-size",
+        "font-size",
+        "text-style",
+        "text-height"
+      ],
+      "correctAnswer": "font-size",
+      "explanation": "The font-size property is used to control the size of text. It can accept various units like px, em, rem, %, etc."
+    }
+  ]
+} 

@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "Which CSS Grid property is used to define the size of columns in a grid layout?",
+      "options": [
+        "grid-column-size",
+        "grid-template-columns",
+        "grid-columns",
+        "column-template"
+      ],
+      "correctAnswer": "grid-template-columns",
+      "explanation": "grid-template-columns defines the columns of the grid with a space-separated list of values representing the size of each column. For example: grid-template-columns: 1fr 2fr 1fr;"
+    },
+    {
+      "question": "What is the purpose of the CSS property 'flex: 1'?",
+      "options": [
+        "It makes the element flexible",
+        "It sets the element's flex-grow to 1, allowing it to grow and fill available space",
+        "It creates a one-column flex container",
+        "It sets the element's order in flexbox to 1"
+      ],
+      "correctAnswer": "It sets the element's flex-grow to 1, allowing it to grow and fill available space",
+      "explanation": "flex: 1 is shorthand for flex: 1 1 0%. It sets flex-grow: 1, flex-shrink: 1, and flex-basis: 0%, making the element grow to fill available space while maintaining equal widths with other flex: 1 elements."
+    },
+    {
+      "question": "What is the purpose of the :root pseudo-class in CSS?",
+      "options": [
+        "To select the first element in the document",
+        "To select the body element",
+        "To select the highest-level parent in the DOM",
+        "To select the html element and define custom properties"
+      ],
+      "correctAnswer": "To select the html element and define custom properties",
+      "explanation": ":root represents the html element and is commonly used to declare CSS custom properties (variables). It has a higher specificity than the html selector."
+    },
+    {
+      "question": "Which CSS function is used to create a smooth transition between colors in a background?",
+      "options": [
+        "transition()",
+        "linear-gradient()",
+        "color-mix()",
+        "blend()"
+      ],
+      "correctAnswer": "linear-gradient()",
+      "explanation": "linear-gradient() creates a smooth transition between two or more colors along a straight line. For example: background: linear-gradient(to right, red, blue);"
+    },
+    {
+      "question": "What is the purpose of the CSS clamp() function?",
+      "options": [
+        "To restrict a value to a specific range",
+        "To clamp elements to their parent container",
+        "To fix elements in place while scrolling",
+        "To round numbers to the nearest integer"
+      ],
+      "correctAnswer": "To restrict a value to a specific range",
+      "explanation": "clamp() takes three parameters: minimum value, preferred value, and maximum value. It ensures a property stays within a range while allowing it to scale between the bounds. Example: font-size: clamp(1rem, 2.5vw, 2rem);"
+    }
+  ]
+} 
