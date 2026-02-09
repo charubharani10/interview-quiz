@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the time complexity of the Kadane's algorithm for finding the maximum subarray sum?",
+      "options": [
+        "O(n^2)",
+        "O(n log n)",
+        "O(n)",
+        "O(log n)"
+      ],
+      "correctAnswer": "O(n)",
+      "explanation": "Kadane's algorithm finds the maximum sum of any contiguous subarray in a one-dimensional array with O(n) time complexity. It uses dynamic programming to keep track of the maximum sum ending at each position."
+    },
+    {
+      "question": "In the Dutch National Flag problem, what is being sorted?",
+      "options": [
+        "Numbers in ascending order",
+        "Three distinct values (usually 0, 1, and 2)",
+        "Strings alphabetically",
+        "Binary values (0 and 1)"
+      ],
+      "correctAnswer": "Three distinct values (usually 0, 1, and 2)",
+      "explanation": "The Dutch National Flag algorithm sorts an array containing three distinct values (like the colors of the Dutch flag). It's commonly used to sort an array of 0s, 1s, and 2s in a single pass with O(n) time complexity."
+    },
+    {
+      "question": "What is the time complexity of finding the kth largest element in an unsorted array using QuickSelect?",
+      "options": [
+        "O(n log n)",
+        "O(n)",
+        "O(k log n)",
+        "O(n + k)"
+      ],
+      "correctAnswer": "O(n)",
+      "explanation": "QuickSelect is an optimized version of QuickSort that only processes one side of the partition. It has an average time complexity of O(n) to find the kth largest/smallest element, making it more efficient than sorting the entire array O(n log n)."
+    },
+    {
+      "question": "What is the space complexity of the Boyer-Moore Majority Voting algorithm?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n/2)"
+      ],
+      "correctAnswer": "O(1)",
+      "explanation": "The Boyer-Moore Majority Voting algorithm finds the majority element (appearing more than n/2 times) using only two variables: a candidate and a counter. This makes its space complexity O(1), regardless of input size."
+    },
+    {
+      "question": "Which algorithm would be most efficient for finding the intersection of two sorted arrays?",
+      "options": [
+        "Using two nested loops",
+        "Binary search for each element",
+        "Two-pointer technique",
+        "Hash table lookup"
+      ],
+      "correctAnswer": "Two-pointer technique",
+      "explanation": "The two-pointer technique is most efficient for finding the intersection of sorted arrays, with O(n + m) time complexity and O(1) extra space. It maintains two pointers, one for each array, and moves them based on element comparisons."
+    }
+  ]
+} 
