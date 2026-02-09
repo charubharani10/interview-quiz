@@ -1,0 +1,81 @@
+{
+  "questions": [
+    {
+      "question": "What is the time complexity of finding the next greater element for all elements in an array using a stack?",
+      "options": [
+        "O(n²)",
+        "O(n log n)",
+        "O(n)",
+        "O(1)"
+      ],
+      "correctAnswer": "O(n)",
+      "explanation": "Using a stack to find the next greater element (NGE) for all array elements takes O(n) time. Each element is pushed and popped at most once, and we scan the array once. This is much more efficient than the O(n²) brute force approach."
+    },
+    {
+      "question": "How can you implement a queue using two stacks?",
+      "options": [
+        "It's impossible to implement a queue using stacks",
+        "Use one stack for enqueue and another for dequeue, transferring elements when needed",
+        "Simply use a single stack and reverse it",
+        "Alternate between pushing and popping on both stacks"
+      ],
+      "correctAnswer": "Use one stack for enqueue and another for dequeue, transferring elements when needed",
+      "explanation": "A queue can be implemented using two stacks: an 'enqueue stack' and a 'dequeue stack'. For enqueue, push onto the enqueue stack. For dequeue, if dequeue stack is empty, pop all elements from enqueue stack and push them to dequeue stack, then pop from dequeue stack. This maintains FIFO order."
+    },
+    {
+      "question": "What is the purpose of using a monotonic stack?",
+      "options": [
+        "To sort elements",
+        "To find the next/previous greater/smaller element efficiently",
+        "To implement a priority queue",
+        "To reverse a sequence"
+      ],
+      "correctAnswer": "To find the next/previous greater/smaller element efficiently",
+      "explanation": "A monotonic stack maintains elements in strictly increasing/decreasing order. It's useful for problems like finding the next greater element, maximum rectangle in histogram, and other problems requiring maintaining order properties efficiently."
+    },
+    {
+      "question": "How would you evaluate a postfix expression using a stack?",
+      "options": [
+        "Push operators and pop operands",
+        "Push operands and evaluate when operator is encountered",
+        "Convert to infix first then evaluate",
+        "Use two stacks, one for operators and one for operands"
+      ],
+      "correctAnswer": "Push operands and evaluate when operator is encountered",
+      "explanation": "To evaluate a postfix expression: scan left to right, push operands onto stack. When an operator is encountered, pop two operands (first pop is second operand), apply the operator, and push result back. For example, for '23+' push 2, push 3, see '+', pop 3 then 2, compute 2+3=5, push 5."
+    },
+    {
+      "question": "What is the space complexity of implementing a min stack that supports push, pop, and getMin in O(1) time?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n²)"
+      ],
+      "correctAnswer": "O(n)",
+      "explanation": "To implement a min stack with O(1) operations, we need an auxiliary stack to keep track of minimums. This second stack stores the minimum element up to each position, requiring O(n) space in the worst case where elements are pushed in ascending order."
+    },
+    {
+      "question": "What is the time complexity of finding the minimum element in a stack if you use an auxiliary stack to track minimums?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n log n)"
+      ],
+      "correctAnswer": "O(1)",
+      "explanation": "Using an auxiliary stack that maintains the minimum elements, we can find the minimum in O(1) time. When pushing an element, if it's smaller than the current minimum, push it to auxiliary stack. When popping, if the popped element equals the top of auxiliary stack, pop from auxiliary stack too. The top of auxiliary stack always gives the current minimum."
+    },
+    {
+      "question": "How can you implement multiple stacks using a single array?",
+      "options": [
+        "It's not possible to implement multiple stacks in one array",
+        "Divide array into fixed equal segments for each stack",
+        "Use linked list instead of array",
+        "Use multiple arrays"
+      ],
+      "correctAnswer": "Divide array into fixed equal segments for each stack",
+      "explanation": "Multiple stacks can be implemented in a single array by dividing it into equal segments. For k stacks in array of size n, each stack gets n/k elements. Stack i's bottom is at i*(n/k) and top is tracked separately. This is space-efficient but may waste space if stacks are unbalanced. A more complex flexible solution uses a free list to allow stacks to grow into unused space."
+    }
+  ]
+} 

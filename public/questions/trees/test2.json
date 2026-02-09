@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the time complexity of AVL tree rotation operations?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "correctAnswer": "O(1)",
+      "explanation": "AVL tree rotations (left, right, left-right, right-left) are constant time operations O(1). While rebalancing after insertion or deletion may require traversing up to the root O(log n), the actual rotation operations at each node take constant time as they only involve rearranging a few pointers."
+    },
+    {
+      "question": "What is the main advantage of Red-Black trees over AVL trees?",
+      "options": [
+        "Red-Black trees are always perfectly balanced",
+        "Red-Black trees use less memory",
+        "Red-Black trees have faster search operations",
+        "Red-Black trees have fewer rotations during insertion and deletion"
+      ],
+      "correctAnswer": "Red-Black trees have fewer rotations during insertion and deletion",
+      "explanation": "While AVL trees maintain stricter balance (height difference ≤ 1), Red-Black trees allow more imbalance but require fewer rotations during modifications. This makes Red-Black trees more efficient for applications with frequent insertions and deletions, though slightly slower for lookups."
+    },
+    {
+      "question": "What is the purpose of a B-tree in database systems?",
+      "options": [
+        "To store data in memory efficiently",
+        "To minimize disk I/O operations by matching block size",
+        "To provide faster in-memory searching",
+        "To reduce the tree height"
+      ],
+      "correctAnswer": "To minimize disk I/O operations by matching block size",
+      "explanation": "B-trees are designed for systems that read/write large blocks of data. Each node can have many children, typically matching disk block size, which minimizes I/O operations. This makes B-trees ideal for databases and file systems where data is stored on disk rather than in memory."
+    },
+    {
+      "question": "What is a Trie (Prefix Tree) commonly used for?",
+      "options": [
+        "Balancing binary trees",
+        "Storing integers efficiently",
+        "String operations and prefix matching",
+        "Graph traversal"
+      ],
+      "correctAnswer": "String operations and prefix matching",
+      "explanation": "A Trie is an efficient data structure for storing and retrieving strings. It excels at prefix matching operations, making it ideal for autocomplete features, spell checkers, and IP routing tables. Each node represents a character, and paths from root to nodes form strings."
+    },
+    {
+      "question": "What is the purpose of a Segment Tree?",
+      "options": [
+        "To store strings efficiently",
+        "To perform range queries and updates on arrays",
+        "To balance binary search trees",
+        "To implement priority queues"
+      ],
+      "correctAnswer": "To perform range queries and updates on arrays",
+      "explanation": "Segment Trees are specialized trees that allow efficient range queries (like sum, minimum, maximum) and updates on arrays. They can perform these operations in O(log n) time, making them useful for problems involving range operations where updates are also frequent."
+    }
+  ]
+} 

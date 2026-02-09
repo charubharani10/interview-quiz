@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the time complexity of push operation in a stack?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "correctAnswer": "O(1)",
+      "explanation": "Push operation in a stack adds an element to the top of the stack. Since we maintain a pointer to the top of the stack, and no traversal is needed, the operation takes constant time O(1) regardless of the stack size."
+    },
+    {
+      "question": "Which principle does a stack follow?",
+      "options": [
+        "FIFO (First In First Out)",
+        "LIFO (Last In First Out)",
+        "Random Access",
+        "Priority Based"
+      ],
+      "correctAnswer": "LIFO (Last In First Out)",
+      "explanation": "A stack follows the Last In First Out (LIFO) principle, meaning the last element pushed onto the stack will be the first one to be popped off. This is similar to a stack of plates where you can only remove the top plate."
+    },
+    {
+      "question": "What happens when you try to pop from an empty stack?",
+      "options": [
+        "Returns null",
+        "Returns 0",
+        "Throws stack underflow exception",
+        "Removes from bottom of stack"
+      ],
+      "correctAnswer": "Throws stack underflow exception",
+      "explanation": "Attempting to pop from an empty stack results in a stack underflow exception. This is a runtime error condition that occurs when trying to remove an element from an empty stack. Good implementations should check for this condition before performing pop operations."
+    },
+    {
+      "question": "Which operation would you use to examine the top element of a stack without removing it?",
+      "options": [
+        "pop()",
+        "peek() or top()",
+        "get()",
+        "remove()"
+      ],
+      "correctAnswer": "peek() or top()",
+      "explanation": "The peek() or top() operation allows you to view the top element of the stack without removing it. This is useful when you need to know what element is next to be popped without actually popping it. Like push and pop, peek is also an O(1) operation."
+    },
+    {
+      "question": "What is the primary advantage of using a stack data structure?",
+      "options": [
+        "Random access to elements",
+        "Sorting elements automatically",
+        "Managing function calls and recursion",
+        "Maintaining ordered data"
+      ],
+      "correctAnswer": "Managing function calls and recursion",
+      "explanation": "Stacks are particularly well-suited for managing function calls and recursion. The call stack keeps track of function calls, local variables, and return addresses. This makes stacks essential for implementing recursion, parsing expressions, and managing program execution context."
+    }
+  ]
+} 

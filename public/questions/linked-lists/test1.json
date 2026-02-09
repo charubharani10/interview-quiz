@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the time complexity of inserting a node at the beginning of a singly linked list?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n^2)"
+      ],
+      "correctAnswer": "O(1)",
+      "explanation": "Inserting at the beginning of a singly linked list only requires updating the new node's next pointer to point to the current head, and updating the head pointer to point to the new node. This takes constant time O(1)."
+    },
+    {
+      "question": "How can you detect a cycle in a linked list?",
+      "options": [
+        "Using a hash table to store visited nodes",
+        "Using Floyd's Cycle-Finding Algorithm (fast and slow pointers)",
+        "Counting the number of nodes",
+        "Reversing the linked list"
+      ],
+      "correctAnswer": "Using Floyd's Cycle-Finding Algorithm (fast and slow pointers)",
+      "explanation": "Floyd's Cycle-Finding Algorithm (also known as the 'tortoise and hare' algorithm) uses two pointers moving at different speeds. If there's a cycle, the fast pointer will eventually meet the slow pointer. This method uses O(1) extra space."
+    },
+    {
+      "question": "What is the main advantage of a doubly linked list over a singly linked list?",
+      "options": [
+        "Faster insertion at the beginning",
+        "Less memory usage",
+        "Ability to traverse in both directions",
+        "Better time complexity for searching"
+      ],
+      "correctAnswer": "Ability to traverse in both directions",
+      "explanation": "A doubly linked list maintains both next and previous pointers for each node, allowing bidirectional traversal. This makes operations like deletion easier and enables backward traversal, which is impossible in a singly linked list."
+    },
+    {
+      "question": "What is the space complexity of reversing a linked list iteratively?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n^2)"
+      ],
+      "correctAnswer": "O(1)",
+      "explanation": "Iterative linked list reversal only requires three pointers (prev, current, and next) to keep track of nodes while reversing their connections. These pointers use constant extra space regardless of the list size, making the space complexity O(1)."
+    },
+    {
+      "question": "In a singly linked list, which operation typically requires traversing to the end of the list?",
+      "options": [
+        "Inserting at the beginning",
+        "Deleting the first node",
+        "Appending to the end",
+        "Accessing the first element"
+      ],
+      "correctAnswer": "Appending to the end",
+      "explanation": "In a singly linked list without a tail pointer, appending to the end requires traversing the entire list to find the last node, making it an O(n) operation. This can be optimized to O(1) by maintaining a tail pointer."
+    }
+  ]
+} 

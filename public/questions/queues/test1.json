@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the time complexity of enqueue operation in a queue implemented using an array?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n log n)"
+      ],
+      "correctAnswer": "O(1)",
+      "explanation": "In a queue implemented using an array with a rear pointer, enqueue operation simply adds an element at the rear and increments the pointer. This takes constant time O(1) when the queue is not full."
+    },
+    {
+      "question": "Which principle does a queue follow?",
+      "options": [
+        "LIFO (Last In First Out)",
+        "FIFO (First In First Out)",
+        "Random Access",
+        "Priority Based"
+      ],
+      "correctAnswer": "FIFO (First In First Out)",
+      "explanation": "A queue follows First In First Out (FIFO) principle, where the first element added to the queue is the first one to be removed. This makes it ideal for tasks like job scheduling and request processing."
+    },
+    {
+      "question": "What happens in a circular queue when the rear pointer reaches the end of the array?",
+      "options": [
+        "Queue becomes full",
+        "Rear pointer moves to the beginning if space is available",
+        "Array size is doubled",
+        "Elements are shifted to the beginning"
+      ],
+      "correctAnswer": "Rear pointer moves to the beginning if space is available",
+      "explanation": "In a circular queue, when the rear pointer reaches the end, it wraps around to the beginning if there's space available. This efficient use of space is why circular queues are also called ring buffers."
+    },
+    {
+      "question": "Which operation would you use to view the front element without removing it?",
+      "options": [
+        "dequeue()",
+        "peek() or front()",
+        "top()",
+        "remove()"
+      ],
+      "correctAnswer": "peek() or front()",
+      "explanation": "peek() or front() returns the element at the front of the queue without removing it. This is useful when you need to examine the next element to be processed without actually processing it."
+    },
+    {
+      "question": "What is the main advantage of using a queue over a stack?",
+      "options": [
+        "Better memory utilization",
+        "Faster operations",
+        "FIFO ordering for sequential processing",
+        "Support for priority elements"
+      ],
+      "correctAnswer": "FIFO ordering for sequential processing",
+      "explanation": "Queues provide FIFO ordering which is essential for sequential processing tasks like printer job scheduling, process scheduling in operating systems, or handling requests in web servers where order of arrival matters."
+    }
+  ]
+} 

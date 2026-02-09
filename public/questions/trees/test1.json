@@ -1,0 +1,103 @@
+{
+  "questions": [
+    {
+      "question": "What is the time complexity of inserting a node into a binary search tree?",
+      "options": [
+        "O(1)",
+        "O(log n) average case, O(n) worst case",
+        "O(n) for all cases",
+        "O(n log n)"
+      ],
+      "correctAnswer": "O(log n) average case, O(n) worst case",
+      "explanation": "In a balanced BST, insertion takes O(log n) as we traverse down one path. However, in the worst case (when the tree is skewed), it becomes O(n) as the tree effectively becomes a linked list."
+    },
+    {
+      "question": "What is the difference between pre-order and in-order traversal of a binary tree?",
+      "options": [
+        "There is no difference",
+        "Pre-order visits root first (Root-Left-Right), while in-order visits left subtree first (Left-Root-Right)",
+        "Pre-order visits leaves first, while in-order visits root first",
+        "Pre-order is only for binary search trees, while in-order is for all trees"
+      ],
+      "correctAnswer": "Pre-order visits root first (Root-Left-Right), while in-order visits left subtree first (Left-Root-Right)",
+      "explanation": "Pre-order traversal follows Root-Left-Right pattern, useful for copying trees. In-order traversal follows Left-Root-Right pattern, which gives nodes in ascending order for a BST."
+    },
+    {
+      "question": "What is the maximum number of nodes at level i in a binary tree?",
+      "options": [
+        "i",
+        "2^i",
+        "2^(i-1)",
+        "i^2"
+      ],
+      "correctAnswer": "2^i",
+      "explanation": "At any level i in a binary tree (where root is at level 0), the maximum number of nodes is 2^i. This is because each node can have at most 2 children, and this compounds at each level. For example: level 0 has 2^0=1 node, level 1 has 2^1=2 nodes, level 2 has 2^2=4 nodes, etc."
+    },
+    {
+      "question": "What is the difference between a binary tree and a binary search tree (BST)?",
+      "options": [
+        "Binary trees can only have 2 nodes",
+        "Binary search trees must be balanced",
+        "Binary search trees maintain ordered elements with left subtree < node < right subtree",
+        "Binary trees can only be traversed in-order"
+      ],
+      "correctAnswer": "Binary search trees maintain ordered elements with left subtree < node < right subtree",
+      "explanation": "A binary tree is a tree where each node has at most two children. A binary search tree adds the ordering property: all nodes in the left subtree must be less than the current node, and all nodes in the right subtree must be greater than the current node. This property enables efficient searching."
+    },
+    {
+      "question": "What are the three standard tree traversal methods?",
+      "options": [
+        "Top-down, bottom-up, middle-out",
+        "Preorder, inorder, postorder",
+        "Left-first, right-first, root-first",
+        "DFS, BFS, level-order"
+      ],
+      "correctAnswer": "Preorder, inorder, postorder",
+      "explanation": "The three standard tree traversal methods are: preorder (root, left, right), inorder (left, root, right), and postorder (left, right, root). Each method visits all nodes but in different orders, useful for different purposes. For example, inorder traversal of a BST gives nodes in sorted order."
+    },
+    {
+      "question": "What is the height of a perfect binary tree with n nodes?",
+      "options": [
+        "log₂(n+1) - 1",
+        "log₂(n)",
+        "n/2",
+        "√n"
+      ],
+      "correctAnswer": "log₂(n+1) - 1",
+      "explanation": "In a perfect binary tree, every level is completely filled. If h is the height (with root at height 0), then n = 2^(h+1) - 1. Solving for h gives us h = log₂(n+1) - 1. This formula gives the minimum height needed to store n nodes in a perfect binary tree."
+    },
+    {
+      "question": "What is a complete binary tree?",
+      "options": [
+        "A tree where every node has exactly two children",
+        "A tree where all levels are fully filled except possibly the last level, which is filled from left to right",
+        "A tree where all leaf nodes are at the same level",
+        "A tree where each node has a maximum of one child"
+      ],
+      "correctAnswer": "A tree where all levels are fully filled except possibly the last level, which is filled from left to right",
+      "explanation": "A complete binary tree has all levels fully filled except possibly the last level, and in the last level, nodes are filled from left to right without gaps. This property makes complete binary trees efficient for array representation and is crucial for heap data structures."
+    },
+    {
+      "question": "Which tree traversal would you use to print a mathematical expression in infix notation?",
+      "options": [
+        "Pre-order traversal",
+        "Post-order traversal",
+        "In-order traversal",
+        "Level-order traversal"
+      ],
+      "correctAnswer": "In-order traversal",
+      "explanation": "In-order traversal (Left-Root-Right) is used for printing mathematical expressions in infix notation. For example, for the expression tree of (a + b) * c, in-order traversal would print: a + b * c."
+    },
+    {
+      "question": "What is the main advantage of using a balanced binary search tree over a regular binary search tree?",
+      "options": [
+        "It uses less memory",
+        "It can store more nodes",
+        "It guarantees O(log n) time complexity for basic operations",
+        "It allows duplicate keys"
+      ],
+      "correctAnswer": "It guarantees O(log n) time complexity for basic operations",
+      "explanation": "A balanced BST (like AVL or Red-Black tree) maintains balance during operations, ensuring O(log n) time complexity for search, insert, and delete. Regular BSTs can degrade to O(n) if nodes are inserted in sorted order."
+    }
+  ]
+} 

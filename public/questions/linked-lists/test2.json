@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the time complexity of finding the intersection point of two linked lists using the optimal solution?",
+      "options": [
+        "O(m*n) where m and n are lengths of the lists",
+        "O(m+n) with O(m+n) space",
+        "O(m+n) with O(1) space",
+        "O(max(m,n)) with O(min(m,n)) space"
+      ],
+      "correctAnswer": "O(m+n) with O(1) space",
+      "explanation": "The optimal solution involves finding the length difference, moving the longer list's pointer ahead by the difference, then moving both pointers together until they meet. This takes O(m+n) time with only a few pointers, thus O(1) space."
+    },
+    {
+      "question": "In a linked list, what does the 'Runner Technique' (also known as Fast/Slow pointer) help to solve?",
+      "options": [
+        "Only cycle detection",
+        "Only finding the middle element",
+        "Only detecting palindromes",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above",
+      "explanation": "The Runner Technique is versatile and can be used for cycle detection (Floyd's algorithm), finding the middle element (slow moves 1 step, fast moves 2), and detecting palindromes (find middle, reverse second half, compare). It's a fundamental linked list pattern."
+    },
+    {
+      "question": "What is the most efficient way to merge k sorted linked lists of total length n?",
+      "options": [
+        "Merge lists one by one",
+        "Use a min-heap of size k",
+        "Sort all elements together",
+        "Use quicksort"
+      ],
+      "correctAnswer": "Use a min-heap of size k",
+      "explanation": "Using a min-heap of size k (where k is the number of lists) gives O(n log k) time complexity. The heap maintains the smallest element from each list's head, and we repeatedly extract the minimum and add the next element from that list."
+    },
+    {
+      "question": "What is the space complexity of reversing a linked list recursively?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "correctAnswer": "O(n)",
+      "explanation": "Recursive linked list reversal uses the system stack to store recursive calls. The space complexity is O(n) because in the worst case, we'll have n recursive calls on the stack, where n is the number of nodes in the list."
+    },
+    {
+      "question": "How can you efficiently find the nth node from the end in a singly linked list in one pass?",
+      "options": [
+        "Count total nodes first, then traverse from start",
+        "Use two pointers with a gap of n nodes",
+        "Start from the end and count backwards",
+        "Use a hash table to store positions"
+      ],
+      "correctAnswer": "Use two pointers with a gap of n nodes",
+      "explanation": "Using two pointers, move the first pointer n nodes ahead, then move both pointers until the first reaches the end. The second pointer will be at the nth node from the end. This requires only one pass and O(1) extra space."
+    }
+  ]
+} 

@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the main difference between a priority queue and a regular queue?",
+      "options": [
+        "Priority queue is faster",
+        "Priority queue uses less memory",
+        "Elements are dequeued based on priority rather than insertion order",
+        "Priority queue can hold more elements"
+      ],
+      "correctAnswer": "Elements are dequeued based on priority rather than insertion order",
+      "explanation": "In a priority queue, elements are dequeued based on their priority (usually highest or lowest value) rather than FIFO order. This is typically implemented using a heap data structure, providing O(log n) insertion and deletion."
+    },
+    {
+      "question": "What is the time complexity of implementing a queue using a linked list with both front and rear pointers?",
+      "options": [
+        "O(1) for both enqueue and dequeue",
+        "O(n) for both operations",
+        "O(1) for enqueue, O(n) for dequeue",
+        "O(n) for enqueue, O(1) for dequeue"
+      ],
+      "correctAnswer": "O(1) for both enqueue and dequeue",
+      "explanation": "With both front and rear pointers in a linked list implementation, enqueue adds at rear and dequeue removes from front, both in O(1) time. No element shifting is needed, making it more efficient than array implementation."
+    },
+    {
+      "question": "How does a deque (double-ended queue) differ from a regular queue?",
+      "options": [
+        "Deque can only store numbers",
+        "Deque allows insertion and deletion at both ends",
+        "Deque is always implemented using arrays",
+        "Deque has faster operations"
+      ],
+      "correctAnswer": "Deque allows insertion and deletion at both ends",
+      "explanation": "A deque (double-ended queue) allows elements to be added or removed from either the front or rear. This makes it more flexible than both stacks and queues, supporting both LIFO and FIFO operations."
+    },
+    {
+      "question": "What is the purpose of using a blocking queue in concurrent programming?",
+      "options": [
+        "To make queue operations faster",
+        "To save memory",
+        "To synchronize producer and consumer threads",
+        "To implement priority scheduling"
+      ],
+      "correctAnswer": "To synchronize producer and consumer threads",
+      "explanation": "Blocking queues provide built-in synchronization between producer and consumer threads. They block when the queue is full (for producers) or empty (for consumers), making them ideal for implementing the producer-consumer pattern safely."
+    },
+    {
+      "question": "In a level-order traversal of a binary tree, which data structure is used?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Array",
+        "Linked List"
+      ],
+      "correctAnswer": "Queue",
+      "explanation": "Level-order traversal (breadth-first traversal) uses a queue to visit nodes level by level. Each node's children are enqueued while the current node is processed, ensuring nodes are visited in order of their level in the tree."
+    }
+  ]
+} 
