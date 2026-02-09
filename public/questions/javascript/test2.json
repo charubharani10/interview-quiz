@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the output of: const [a, ...rest] = [1, 2, 3, 4]; console.log(rest);",
+      "options": [
+        "[2, 3, 4]",
+        "[1, 2, 3, 4]",
+        "[1]",
+        "TypeError"
+      ],
+      "correctAnswer": "[2, 3, 4]",
+      "explanation": "The rest operator (...) collects all remaining elements into an array. Here, a gets 1, and rest gets all remaining elements [2, 3, 4]."
+    },
+    {
+      "question": "Which of the following is a correct way to use template literals?",
+      "options": [
+        "'Hello ${name}'",
+        "\"Hello ${name}\"",
+        "`Hello ${name}`",
+        "Hello ${name}"
+      ],
+      "correctAnswer": "`Hello ${name}`",
+      "explanation": "Template literals use backticks (`) and ${expression} syntax for interpolation. Single or double quotes don't support interpolation."
+    },
+    {
+      "question": "What is the output of: const obj = { a: 1 }; const { b = 2 } = obj; console.log(b);",
+      "options": [
+        "undefined",
+        "1",
+        "2",
+        "ReferenceError"
+      ],
+      "correctAnswer": "2",
+      "explanation": "When destructuring, you can provide default values. Since obj doesn't have a 'b' property, the default value 2 is used."
+    },
+    {
+      "question": "What is the main difference between let and const?",
+      "options": [
+        "let is block-scoped, const is function-scoped",
+        "let variables can be reassigned, const variables cannot",
+        "let is hoisted, const is not",
+        "let is for primitives, const is for objects"
+      ],
+      "correctAnswer": "let variables can be reassigned, const variables cannot",
+      "explanation": "Both let and const are block-scoped, but const variables cannot be reassigned after declaration. Note that const objects' properties can still be modified."
+    },
+    {
+      "question": "What is the output of: async function test() { return 'hello'; } console.log(test());",
+      "options": [
+        "'hello'",
+        "Promise { 'hello' }",
+        "undefined",
+        "Error"
+      ],
+      "correctAnswer": "Promise { 'hello' }",
+      "explanation": "Async functions always return a promise. Even if we return a non-promise value, it gets wrapped in a promise automatically."
+    }
+  ]
+} 

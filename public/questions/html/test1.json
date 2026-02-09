@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the correct HTML element for the largest heading?",
+      "options": [
+        "<heading>",
+        "<h6>",
+        "<h1>",
+        "<head>"
+      ],
+      "correctAnswer": "<h1>",
+      "explanation": "The <h1> tag defines the most important (largest) heading. HTML has six levels of headings, from h1 (largest) to h6 (smallest)."
+    },
+    {
+      "question": "Which HTML attribute is used to define inline styles?",
+      "options": [
+        "class",
+        "styles",
+        "style",
+        "css"
+      ],
+      "correctAnswer": "style",
+      "explanation": "The style attribute is used to specify CSS styling directly on an HTML element using the style attribute, e.g., <p style='color: red;'>."
+    },
+    {
+      "question": "What is the correct HTML for creating a hyperlink?",
+      "options": [
+        "<a url='http://example.com'>Link</a>",
+        "<a href='http://example.com'>Link</a>",
+        "<link href='http://example.com'>Link</link>",
+        "<hyperlink>http://example.com</hyperlink>"
+      ],
+      "correctAnswer": "<a href='http://example.com'>Link</a>",
+      "explanation": "The <a> tag with the href attribute is used to create hyperlinks in HTML. The href attribute specifies the URL the link goes to."
+    },
+    {
+      "question": "Which HTML element is used to specify a footer for a document or section?",
+      "options": [
+        "<bottom>",
+        "<section>",
+        "<footer>",
+        "<end>"
+      ],
+      "correctAnswer": "<footer>",
+      "explanation": "The <footer> element defines a footer for a document or section. It typically contains authorship, copyright, contact info, etc."
+    },
+    {
+      "question": "What is the correct HTML for inserting an image?",
+      "options": [
+        "<img href='image.jpg' alt='MyImage'>",
+        "<image src='image.jpg' alt='MyImage'>",
+        "<img src='image.jpg' alt='MyImage'>",
+        "<picture src='image.jpg' alt='MyImage'>"
+      ],
+      "correctAnswer": "<img src='image.jpg' alt='MyImage'>",
+      "explanation": "The <img> tag is used to embed images in HTML. The src attribute specifies the path to the image, and alt provides alternative text for accessibility."
+    }
+  ]
+} 

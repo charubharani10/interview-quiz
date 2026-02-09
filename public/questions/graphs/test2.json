@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the time complexity of the Floyd-Warshall algorithm for finding all-pairs shortest paths?",
+      "options": [
+        "O(V²)",
+        "O(V³)",
+        "O(VE)",
+        "O(V log V)"
+      ],
+      "correctAnswer": "O(V³)",
+      "explanation": "Floyd-Warshall uses three nested loops to consider each vertex as an intermediate point between all pairs of vertices. This results in O(V³) time complexity but can handle negative edge weights (unlike Dijkstra's) and is simpler to implement."
+    },
+    {
+      "question": "What is the purpose of Tarjan's algorithm in graph theory?",
+      "options": [
+        "To find shortest paths",
+        "To find minimum spanning trees",
+        "To find strongly connected components in directed graphs",
+        "To detect cycles in undirected graphs"
+      ],
+      "correctAnswer": "To find strongly connected components in directed graphs",
+      "explanation": "Tarjan's algorithm finds strongly connected components (SCCs) in a directed graph in O(V + E) time using a single DFS traversal. It's more efficient than Kosaraju's algorithm as it requires only one pass over the graph."
+    },
+    {
+      "question": "What is the difference between Prim's and Kruskal's algorithms for minimum spanning trees?",
+      "options": [
+        "Prim's works only on undirected graphs",
+        "Kruskal's has better time complexity",
+        "Prim's grows a single tree, Kruskal's allows forest of trees during construction",
+        "Prim's works only on weighted graphs"
+      ],
+      "correctAnswer": "Prim's grows a single tree, Kruskal's allows forest of trees during construction",
+      "explanation": "Prim's algorithm grows a single tree from a starting vertex, adding the minimum weight edge that connects a new vertex. Kruskal's sorts all edges and adds them if they don't create cycles, potentially maintaining multiple trees until they're connected."
+    },
+    {
+      "question": "What is the purpose of the Bellman-Ford algorithm?",
+      "options": [
+        "To find minimum spanning trees",
+        "To detect negative cycles and find shortest paths with negative edges",
+        "To find strongly connected components",
+        "To perform topological sorting"
+      ],
+      "correctAnswer": "To detect negative cycles and find shortest paths with negative edges",
+      "explanation": "Bellman-Ford can find shortest paths in graphs with negative edge weights and detect negative cycles. Unlike Dijkstra's algorithm, it can handle negative weights but has a worse time complexity of O(VE)."
+    },
+    {
+      "question": "What is the significance of a bipartite graph?",
+      "options": [
+        "It has no cycles",
+        "It can be colored with just two colors with no adjacent vertices having the same color",
+        "It has a perfect matching",
+        "It is always planar"
+      ],
+      "correctAnswer": "It can be colored with just two colors with no adjacent vertices having the same color",
+      "explanation": "A bipartite graph's vertices can be divided into two disjoint sets such that every edge connects vertices from different sets. This property is useful in matching problems, scheduling, and resource allocation."
+    }
+  ]
+} 

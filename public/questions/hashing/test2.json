@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the purpose of consistent hashing?",
+      "options": [
+        "To eliminate all collisions",
+        "To minimize rehashing when the number of slots changes",
+        "To provide perfect hash functions",
+        "To improve hash function speed"
+      ],
+      "correctAnswer": "To minimize rehashing when the number of slots changes",
+      "explanation": "Consistent hashing minimizes the number of keys that need to be remapped when adding or removing slots (servers) in distributed systems. It maps both keys and slots to a circle, and each key is assigned to the next slot clockwise from its position."
+    },
+    {
+      "question": "What is the advantage of double hashing over linear probing?",
+      "options": [
+        "It's easier to implement",
+        "It uses less memory",
+        "It reduces clustering by using a second hash function",
+        "It guarantees no collisions"
+      ],
+      "correctAnswer": "It reduces clustering by using a second hash function",
+      "explanation": "Double hashing uses a second hash function to determine the probe sequence, avoiding the clustering that occurs with linear probing. This leads to better distribution of elements and more efficient probing sequences."
+    },
+    {
+      "question": "What is the purpose of a Bloom filter?",
+      "options": [
+        "To sort elements efficiently",
+        "To provide exact membership testing",
+        "To provide space-efficient probabilistic membership testing",
+        "To eliminate hash collisions"
+      ],
+      "correctAnswer": "To provide space-efficient probabilistic membership testing",
+      "explanation": "A Bloom filter is a space-efficient probabilistic data structure used to test whether an element is a member of a set. It may have false positives but never false negatives, making it useful for quick filtering in databases and caches."
+    },
+    {
+      "question": "What is the main characteristic of a cryptographic hash function?",
+      "options": [
+        "Fast computation",
+        "Small output size",
+        "One-way function with avalanche effect",
+        "No collisions"
+      ],
+      "correctAnswer": "One-way function with avalanche effect",
+      "explanation": "Cryptographic hash functions are one-way (computationally infeasible to reverse) and exhibit the avalanche effect (small input changes cause large output changes). They're designed for security applications like password storage and digital signatures."
+    },
+    {
+      "question": "What is the purpose of perfect hashing?",
+      "options": [
+        "To eliminate the need for hash functions",
+        "To guarantee O(1) worst-case lookup with no collisions",
+        "To reduce memory usage",
+        "To improve insertion speed"
+      ],
+      "correctAnswer": "To guarantee O(1) worst-case lookup with no collisions",
+      "explanation": "Perfect hashing guarantees no collisions and O(1) worst-case lookup time for a static set of keys. It uses two levels of hashing where the second level's table size is proportional to the number of keys that hash to that location in the first level."
+    }
+  ]
+} 

@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "Which method is used to prevent both default event behavior and event bubbling?",
+      "options": [
+        "event.preventDefault()",
+        "event.stopPropagation()",
+        "event.stopImmediatePropagation()",
+        "event.preventDefault() and event.stopPropagation()"
+      ],
+      "correctAnswer": "event.preventDefault() and event.stopPropagation()",
+      "explanation": "preventDefault() stops the default behavior, while stopPropagation() prevents the event from bubbling up. You need both to stop both behaviors."
+    },
+    {
+      "question": "What is event delegation?",
+      "options": [
+        "Directly binding events to dynamically created elements",
+        "Attaching event listeners to parent elements to handle events on children",
+        "Using multiple event listeners for the same event",
+        "Removing event listeners automatically"
+      ],
+      "correctAnswer": "Attaching event listeners to parent elements to handle events on children",
+      "explanation": "Event delegation is a technique where you attach a single event listener to a parent element to handle events on its children, including future (dynamically added) children."
+    },
+    {
+      "question": "Which method correctly creates a new element and adds it to the DOM?",
+      "options": [
+        "document.createElement('div').appendTo(document.body)",
+        "document.body.createElement('div')",
+        "document.createElement('div'); document.body.appendChild(div)",
+        "const div = document.createElement('div'); document.body.appendChild(div)"
+      ],
+      "correctAnswer": "const div = document.createElement('div'); document.body.appendChild(div)",
+      "explanation": "To add a new element to the DOM, first create it with createElement(), then append it to an existing element using appendChild()."
+    },
+    {
+      "question": "What is the difference between innerHTML and textContent?",
+      "options": [
+        "They are identical in functionality",
+        "innerHTML parses HTML, textContent treats everything as text",
+        "textContent is faster but less secure",
+        "innerHTML is always the better choice"
+      ],
+      "correctAnswer": "innerHTML parses HTML, textContent treats everything as text",
+      "explanation": "innerHTML parses content as HTML, which can execute scripts and create elements. textContent treats everything as plain text, which is safer and faster for text-only content."
+    },
+    {
+      "question": "What is the correct way to remove an event listener?",
+      "options": [
+        "element.removeEventListener('click')",
+        "element.removeEventListener('click', handler)",
+        "element.removeEventListener(handler)",
+        "element.removeEvent('click', handler)"
+      ],
+      "correctAnswer": "element.removeEventListener('click', handler)",
+      "explanation": "To remove an event listener, you must provide both the event type and the same function reference that was used to add the listener."
+    }
+  ]
+} 

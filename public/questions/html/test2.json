@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "Which HTML5 element should be used to mark up an article's main content area?",
+      "options": [
+        "<content>",
+        "<main>",
+        "<article>",
+        "<section>"
+      ],
+      "correctAnswer": "<main>",
+      "explanation": "The <main> element represents the main content of the document. It should be unique to the document and should not include content that is repeated across documents like sidebars, navigation links, etc."
+    },
+    {
+      "question": "What is the purpose of the srcset attribute in the <img> tag?",
+      "options": [
+        "To specify multiple source files for video elements",
+        "To provide alternative text for images",
+        "To specify multiple image files for different screen sizes and resolutions",
+        "To set the source directory for images"
+      ],
+      "correctAnswer": "To specify multiple image files for different screen sizes and resolutions",
+      "explanation": "The srcset attribute allows you to specify multiple image sources with different sizes/resolutions, letting browsers choose the most appropriate image based on the device's characteristics."
+    },
+    {
+      "question": "Which HTML5 input type automatically validates that its value is a valid email address?",
+      "options": [
+        "type='text' pattern='[email]'",
+        "type='validate-email'",
+        "type='email'",
+        "type='mail'"
+      ],
+      "correctAnswer": "type='email'",
+      "explanation": "HTML5 introduced the email input type which provides automatic validation of email addresses on form submission, along with appropriate keyboard layouts on mobile devices."
+    },
+    {
+      "question": "What is the purpose of the <picture> element in HTML5?",
+      "options": [
+        "It's just an alternative to <img>",
+        "It provides a container for multiple image sources and lets browsers choose the most suitable one",
+        "It's used for creating image galleries",
+        "It's used for adding captions to images"
+      ],
+      "correctAnswer": "It provides a container for multiple image sources and lets browsers choose the most suitable one",
+      "explanation": "The <picture> element contains multiple <source> elements and one <img> element to provide different versions of an image for different display/device scenarios."
+    },
+    {
+      "question": "Which HTML5 element is used to draw graphics via JavaScript?",
+      "options": [
+        "<draw>",
+        "<svg>",
+        "<canvas>",
+        "<graphic>"
+      ],
+      "correctAnswer": "<canvas>",
+      "explanation": "The <canvas> element is used to draw graphics on the fly via JavaScript. It can be used for animations, game graphics, data visualization, photo manipulation, and real-time video processing."
+    }
+  ]
+} 

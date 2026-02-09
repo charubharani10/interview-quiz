@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the main purpose of a hash function?",
+      "options": [
+        "To sort data",
+        "To compress data",
+        "To map data of arbitrary size to fixed-size values",
+        "To encrypt data"
+      ],
+      "correctAnswer": "To map data of arbitrary size to fixed-size values",
+      "explanation": "A hash function takes input data of any size and produces a fixed-size output (hash value). This mapping allows for efficient data storage and retrieval in hash tables, where the hash value serves as an index."
+    },
+    {
+      "question": "What is a collision in hashing?",
+      "options": [
+        "When the hash function fails",
+        "When two different inputs produce the same hash value",
+        "When the hash table is full",
+        "When the input is too large"
+      ],
+      "correctAnswer": "When two different inputs produce the same hash value",
+      "explanation": "A collision occurs when two different inputs hash to the same value. This is inevitable due to the pigeonhole principle (mapping larger set to smaller set), and hash tables must implement collision resolution strategies."
+    },
+    {
+      "question": "What is the time complexity of insertion in a hash table with chaining?",
+      "options": [
+        "O(1) average case, O(n) worst case",
+        "O(log n)",
+        "O(n)",
+        "O(1) in all cases"
+      ],
+      "correctAnswer": "O(1) average case, O(n) worst case",
+      "explanation": "With chaining, insertion is O(1) on average if the hash function distributes values uniformly. Worst case is O(n) if all elements hash to the same bucket, forming a linked list."
+    },
+    {
+      "question": "What is load factor in a hash table?",
+      "options": [
+        "The size of the hash table",
+        "The number of collisions",
+        "The ratio of number of elements to table size",
+        "The maximum chain length"
+      ],
+      "correctAnswer": "The ratio of number of elements to table size",
+      "explanation": "Load factor = n/m where n is number of elements and m is table size. It measures how full the hash table is and helps decide when to resize. A higher load factor means more chance of collisions."
+    },
+    {
+      "question": "Which collision resolution technique uses probing?",
+      "options": [
+        "Chaining",
+        "Open addressing",
+        "Perfect hashing",
+        "Double hashing"
+      ],
+      "correctAnswer": "Open addressing",
+      "explanation": "Open addressing resolves collisions by probing (searching) for next empty slot in the table. Common probing methods include linear probing (check next slot), quadratic probing (check slots at quadratic intervals), and double hashing."
+    }
+  ]
+} 

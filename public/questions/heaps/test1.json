@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the time complexity of inserting an element into a binary heap?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "correctAnswer": "O(log n)",
+      "explanation": "Insertion in a binary heap involves adding the element at the end and then performing 'heapify-up' operation. Since a heap is a complete binary tree, its height is log n, making the time complexity O(log n)."
+    },
+    {
+      "question": "What property must be maintained in a max heap?",
+      "options": [
+        "Each node must have exactly two children",
+        "The tree must be balanced",
+        "Parent nodes must be greater than or equal to their children",
+        "Siblings must be in sorted order"
+      ],
+      "correctAnswer": "Parent nodes must be greater than or equal to their children",
+      "explanation": "In a max heap, the key of each node must be greater than or equal to the keys of its children. This property ensures that the maximum element is always at the root of the heap."
+    },
+    {
+      "question": "How are elements stored in a binary heap using an array?",
+      "options": [
+        "In sorted order",
+        "Using parent index i, left child at 2i+1, right child at 2i+2",
+        "Using hash functions",
+        "In random order"
+      ],
+      "correctAnswer": "Using parent index i, left child at 2i+1, right child at 2i+2",
+      "explanation": "Binary heaps are typically implemented using arrays where for a node at index i, its left child is at 2i+1, right child at 2i+2, and parent at floor((i-1)/2). This provides efficient access to parent and child nodes."
+    },
+    {
+      "question": "What is the time complexity of finding the maximum element in a max heap?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "correctAnswer": "O(1)",
+      "explanation": "In a max heap, the maximum element is always at the root (index 0). Therefore, accessing the maximum element is a constant time O(1) operation, making heaps efficient for priority queue implementations."
+    },
+    {
+      "question": "What is heapify-down operation used for?",
+      "options": [
+        "Inserting new elements",
+        "Finding the maximum element",
+        "Maintaining heap property after root deletion",
+        "Sorting the heap"
+      ],
+      "correctAnswer": "Maintaining heap property after root deletion",
+      "explanation": "Heapify-down is used after deleting the root element. The last element is moved to the root and then compared with its children, swapping with the larger (in max heap) child until the heap property is restored."
+    }
+  ]
+} 

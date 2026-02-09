@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "question": "What is the difference between a directed and undirected graph?",
+      "options": [
+        "Directed graphs have weights, undirected don't",
+        "Directed graphs have edges with direction, undirected have bidirectional edges",
+        "Directed graphs can't have cycles",
+        "Undirected graphs can't have self-loops"
+      ],
+      "correctAnswer": "Directed graphs have edges with direction, undirected have bidirectional edges",
+      "explanation": "In a directed graph (digraph), edges have a direction indicating one-way relationships between vertices. In an undirected graph, edges represent two-way relationships, meaning if vertex A is connected to B, then B is also connected to A."
+    },
+    {
+      "question": "What is the maximum number of edges in an undirected graph with n vertices?",
+      "options": [
+        "n",
+        "n-1",
+        "n(n-1)/2",
+        "n^2"
+      ],
+      "correctAnswer": "n(n-1)/2",
+      "explanation": "In an undirected graph with n vertices, each vertex can connect to at most n-1 other vertices. Since each edge connects two vertices and we count each edge only once, the maximum number of edges is n(n-1)/2."
+    },
+    {
+      "question": "What is a spanning tree of a graph?",
+      "options": [
+        "A tree that contains all vertices but minimum possible edges",
+        "Any subgraph that is a tree",
+        "A tree with exactly n-1 edges",
+        "A complete binary tree representation of the graph"
+      ],
+      "correctAnswer": "A tree that contains all vertices but minimum possible edges",
+      "explanation": "A spanning tree is a subgraph that includes all vertices of the original graph and forms a tree (no cycles). It contains exactly n-1 edges where n is the number of vertices, which is the minimum needed to keep all vertices connected."
+    },
+    {
+      "question": "What is the time complexity of BFS (Breadth-First Search) in a graph?",
+      "options": [
+        "O(V)",
+        "O(E)",
+        "O(V + E)",
+        "O(V * E)"
+      ],
+      "correctAnswer": "O(V + E)",
+      "explanation": "BFS visits each vertex once (O(V)) and explores each edge once (O(E)). The total time complexity is O(V + E) where V is the number of vertices and E is the number of edges in the graph."
+    },
+    {
+      "question": "What is an adjacency matrix representation of a graph?",
+      "options": [
+        "A list of all edges in the graph",
+        "A 2D array where cell [i][j] indicates if vertices i and j are connected",
+        "A tree showing the hierarchy of vertices",
+        "A list of vertices with their degrees"
+      ],
+      "correctAnswer": "A 2D array where cell [i][j] indicates if vertices i and j are connected",
+      "explanation": "An adjacency matrix is a square matrix of size V×V where V is the number of vertices. Entry [i][j] is 1 (or the edge weight) if there's an edge from vertex i to j, and 0 otherwise. It provides O(1) edge lookup but requires O(V²) space."
+    }
+  ]
+}
+ 

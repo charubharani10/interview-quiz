@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the time complexity of building a heap from an array of n elements?",
+      "options": [
+        "O(n log n)",
+        "O(n)",
+        "O(log n)",
+        "O(n²)"
+      ],
+      "correctAnswer": "O(n)",
+      "explanation": "While it might seem like O(n log n) since each insertion is O(log n), building a heap from bottom-up using heapify operations actually takes O(n) time. This is because most heapify operations occur on small subtrees near the leaves."
+    },
+    {
+      "question": "What is the main advantage of a Fibonacci heap over a binary heap?",
+      "options": [
+        "Better space complexity",
+        "Simpler implementation",
+        "O(1) amortized time for decrease-key operation",
+        "Faster element access"
+      ],
+      "correctAnswer": "O(1) amortized time for decrease-key operation",
+      "explanation": "Fibonacci heaps provide O(1) amortized time for decrease-key operations, compared to O(log n) in binary heaps. This makes them theoretically more efficient for algorithms like Dijkstra's shortest path, though they're more complex to implement."
+    },
+    {
+      "question": "How can you find the k-th largest element in an array using a heap?",
+      "options": [
+        "Build max heap and extract k times",
+        "Build min heap of size k with largest elements",
+        "Sort the array first",
+        "Use binary search with heap"
+      ],
+      "correctAnswer": "Build min heap of size k with largest elements",
+      "explanation": "The most efficient approach is to maintain a min heap of size k. Process each element: if heap size < k, add element; if element > heap top, remove top and add element. Final heap top is k-th largest. This takes O(n log k) time."
+    },
+    {
+      "question": "What is a binomial heap used for?",
+      "options": [
+        "Sorting arrays only",
+        "Efficient merging of heaps",
+        "Constant time access to elements",
+        "Better space efficiency"
+      ],
+      "correctAnswer": "Efficient merging of heaps",
+      "explanation": "Binomial heaps excel at merging operations, performing them in O(log n) time. They consist of a collection of binomial trees, where each tree's size is a power of 2, making merging efficient by combining like-sized trees."
+    },
+    {
+      "question": "How does a d-ary heap differ from a binary heap?",
+      "options": [
+        "It uses less memory",
+        "Each node can have up to d children instead of just 2",
+        "It's always perfectly balanced",
+        "It supports faster insertions"
+      ],
+      "correctAnswer": "Each node can have up to d children instead of just 2",
+      "explanation": "A d-ary heap is a generalization of binary heap where each node can have up to d children instead of 2. This can improve performance for certain operations like decrease-key in priority queues, though at the cost of more comparisons during heapify."
+    }
+  ]
+} 

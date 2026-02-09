@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "What is the output of: console.log(typeof typeof 1)?",
+      "options": [
+        "number",
+        "string",
+        "undefined",
+        "object"
+      ],
+      "correctAnswer": "string",
+      "explanation": "The typeof operator always returns a string. In this case, typeof 1 returns 'number', and then typeof 'number' returns 'string'."
+    },
+    {
+      "question": "Which of the following is a correct way to create a Promise?",
+      "options": [
+        "new Promise(resolve, reject) => { }",
+        "new Promise((resolve, reject) => { })",
+        "Promise((resolve, reject) => { })",
+        "Promise.create((resolve, reject) => { })"
+      ],
+      "correctAnswer": "new Promise((resolve, reject) => { })",
+      "explanation": "A Promise is created using the 'new' keyword and a constructor that takes an executor function with resolve and reject parameters."
+    },
+    {
+      "question": "What is the value of arr after: let arr = [1, 2, 3]; arr.length = 0;",
+      "options": [
+        "[1, 2, 3]",
+        "[]",
+        "undefined",
+        "[empty × 0]"
+      ],
+      "correctAnswer": "[]",
+      "explanation": "Setting the length property of an array to 0 clears the array, making it an empty array."
+    },
+    {
+      "question": "What is the output of: console.log(0.1 + 0.2 === 0.3)?",
+      "options": [
+        "true",
+        "false",
+        "undefined",
+        "Error"
+      ],
+      "correctAnswer": "false",
+      "explanation": "Due to floating-point precision in JavaScript, 0.1 + 0.2 actually equals 0.30000000000000004, not exactly 0.3."
+    },
+    {
+      "question": "What is the correct way to check if an object is an array?",
+      "options": [
+        "typeof obj === 'array'",
+        "obj instanceof Array",
+        "Array.isArray(obj)",
+        "obj.constructor === Array"
+      ],
+      "correctAnswer": "Array.isArray(obj)",
+      "explanation": "Array.isArray() is the most reliable way to check if an object is an array, as it works across different window contexts and frames."
+    }
+  ]
+} 
