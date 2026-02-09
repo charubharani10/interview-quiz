@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.quizinterview.com
+
+# Sitemaps
+Sitemap: https://www.quizinterview.com/sitemap.xml
