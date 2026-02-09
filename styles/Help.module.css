@@ -1,0 +1,65 @@
+.helpWrapper {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+.intro {
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.resourcesGrid {
+  margin-top: 2rem;
+}
+
+.resourceCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+}
+
+.resourceCard:hover {
+  transform: translateY(-5px);
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #1976d2;
+}
+
+.resourceButton {
+  margin-top: auto !important;
+}
+
+.contactSection {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.contactButton {
+  margin-top: 1rem !important;
+}
+
+@media (max-width: 600px) {
+  .helpWrapper {
+    padding: 1rem;
+  }
+
+  .resourceCard {
+    margin-bottom: 1rem;
+  }
+
+  .contactSection {
+    padding: 1rem;
+  }
+} 

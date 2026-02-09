@@ -1,0 +1,10 @@
+.termsWrapper {
+  max-width: 60%;
+  margin: 1rem auto 0;
+}
+
+@media screen and (max-width: 640px) {
+  .termsWrapper {
+    max-width: 100%;
+  }
+}

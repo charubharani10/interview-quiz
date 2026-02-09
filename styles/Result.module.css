@@ -1,0 +1,56 @@
+.resultWrapper {
+  padding: 1rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.resultTitle {
+  text-align: center;
+}
+
+.resultContainer {
+  max-height: 30rem;
+  overflow-y: auto;
+}
+
+.bodyTextWrong,
+.bodyTextRight {
+  padding: 0;
+}
+
+.resultsButton {
+  text-align: center;
+  align-items: center;
+}
+
+.resultsButton button {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.shareContainer button {
+  margin-right: 1rem;
+}
+
+.shareContainer svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.blockquote {
+  border-left: 4px solid #1976d2; /* Example color */
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f5f5f5; /* Example background color */
+  border-radius: 4px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 640px) {
+  .resultWrapper {
+    border-radius: 0;
+    margin: 0.5rem auto;
+  }
+}

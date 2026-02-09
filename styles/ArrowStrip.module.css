@@ -1,0 +1,28 @@
+.arrowStrip {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns content to the right */
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .text {
+    margin-left: 0.75rem;
+  }
+  
+  .animatedArrow {
+    font-size: 2rem;
+    animation: bounce 1.5s ease infinite; /* Call the bounce animation */
+  }
+  
+  /* Bouncing Animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(0.5rem); /* Bounce effect by shifting right */
+    }
+  }
+  

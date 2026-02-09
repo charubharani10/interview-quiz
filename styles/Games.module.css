@@ -1,0 +1,54 @@
+.gamesWrapper {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+.intro {
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.gamesGrid {
+  margin-top: 2rem;
+}
+
+.gameCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gameCard:hover {
+  transform: translateY(-5px);
+}
+
+.gameImage {
+  object-fit: cover;
+}
+
+.playButton {
+  margin-top: auto !important;
+}
+
+.comingSoon {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .gamesWrapper {
+    padding: 1rem;
+  }
+
+  .gameCard {
+    margin-bottom: 1rem;
+  }
+
+  .comingSoon {
+    padding: 1rem;
+  }
+} 

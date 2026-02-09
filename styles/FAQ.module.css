@@ -1,0 +1,38 @@
+.faqWrapper {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+.intro {
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.accordionContainer {
+  margin-top: 2rem;
+}
+
+.accordion {
+  margin-bottom: 1rem !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.accordion:before {
+  display: none;
+}
+
+.accordion h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .faqWrapper {
+    padding: 1rem;
+  }
+
+  .accordion h3 {
+    font-size: 1rem;
+  }
+} 

@@ -1,0 +1,54 @@
+/* Link style */
+.linkStyle {
+  text-transform: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  transition: color 0.5s ease;
+}
+
+.linkStyle:hover {
+  color: #005bb5;
+}
+
+/* Bounce animation for the icon */
+.bounceIcon {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+.linkStyle:hover .bounceIcon {
+  transform: translateX(5px); /* Move icon slightly to the right */
+}
+
+/* Show more/less button */
+.showMoreButton {
+  text-transform: none;
+  font-weight: bold;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #005bb5;
+  transition: color 0.3s ease;
+}
+
+.showMoreButton:hover {
+  color: #003b8e;
+}
+
+.collapse button,
+.expanded button {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.collapse {
+  max-height: 9rem;
+  overflow: hidden;
+}
+
+.expanded {
+  max-height: 100rem;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+}
